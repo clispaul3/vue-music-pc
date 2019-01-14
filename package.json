@@ -2,10 +2,13 @@
   "name": "vue-music-pc",
   "version": "0.1.0",
   "private": true,
+  "main":"./src/main/main.js",
+  "apiurl":"http://cloudmusic.qianqian.com/developer/1250/app/list",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "dev:electron":"electron ."
   },
   "dependencies": {
     "vue": "^2.5.21"
@@ -17,7 +20,10 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.5.21",
+    "electron": "^2.0.4",
+    "electron-builder": "^20.38.4",
+    "electron-packager": "^13.0.1"
   },
   "eslintConfig": {
     "root": true,
