@@ -55,3 +55,18 @@ html,body{
 .overflow-scroll:hover::-webkit-scrollbar-thumb{
     background:#ddd;
 }
+// 搜索输入框的样式
+input.el-input__inner{
+    height:30px;
+    line-height:30px;
+    font-size:13px;
+    padding-left:30px;
+    outline:none;
+}
+span.el-input__prefix{
+    left:10px;
+    i{
+        font-size:14px;
+        line-height:31px;
+    }
+}
