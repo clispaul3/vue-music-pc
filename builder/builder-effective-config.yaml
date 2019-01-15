@@ -1,0 +1,22 @@
+directories:
+  output: builder
+  buildResources: build
+productName: zyb-music
+appId: com.example.yourapp
+files:
+  - filter:
+      - dist/**/*
+dmg:
+  contents:
+    - x: 410
+      'y': 150
+      type: link
+      path: /Applications
+    - x: 130
+      'y': 150
+      type: file
+mac:
+  icon: icons/logo.icns
+win:
+  icon: icons/logo.ico
+electronVersion: 2.0.16

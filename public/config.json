@@ -1,0 +1,4 @@
+{
+    "web-host":"http://localhost:8086",
+    "api-host":"http://localhost:8088"
+}
