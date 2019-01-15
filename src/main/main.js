@@ -11,7 +11,7 @@ function createWin(){
         webSecurity:false,
         titleBarStyle:'hidden',
     })
-    let localurl = 'http://localhost:8083/index.html'
+    let localurl = 'http://localhost:8088/index.html'
     mainwindow.loadURL(localurl)
     mainwindow.webContents.openDevTools()
     mainwindow.on('ready-to-show',()=>{

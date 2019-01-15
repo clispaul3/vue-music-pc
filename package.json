@@ -3,13 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "main":"./src/main/main.js",
-  "apiurl":"http://cloudmusic.qianqian.com/developer/1250/app/list",
+  "apiurl":"https://github.com/Binaryify/NeteaseCloudMusicApi",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "dev:electron":"electron .",
-    "commit":"bash ./scripts/commit.sh"
+    "commit":"bash ./scripts/commit.sh",
+    "dev:bash":"bash ./scripts/dev.sh",
+    "start:api":"PORT=8088 node ./NeteaseCloudMusicApi/app.js"
   },
   "dependencies": {
     "vue": "^2.5.21"
