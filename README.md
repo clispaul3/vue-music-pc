@@ -1,5 +1,6 @@
 # vue-music-pc
-## npm install & yarn
+## 安装依赖
+   + npm install & yarn
 ## 配置文件 public/config.json
 ## 网易api接口
    + [接口](https://github.com/Binaryify/NeteaseCloudMusicApi)
