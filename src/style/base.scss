@@ -50,10 +50,14 @@ html,body{
 }
 .overflow-scroll::-webkit-scrollbar-track {/*滚动条里面轨道*/
     border-radius: 10px;
-    background:#fff;;
+    background:#fff;
 }
 .overflow-scroll:hover::-webkit-scrollbar-thumb{
     background:#ddd;
+}
+#app,.page-index{
+    width:100%;
+    height:100%;
 }
 // 搜索输入框的样式
 input.el-input__inner{
@@ -70,3 +74,4 @@ span.el-input__prefix{
         line-height:31px;
     }
 }
+

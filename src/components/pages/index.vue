@@ -6,6 +6,7 @@
 <script>
 import axios from 'axios'
 import ModuleSearch from '@module/search/search.vue'
+const { platform } = window.require('os')
 export default {
     data(){
         return{
@@ -16,15 +17,17 @@ export default {
         ModuleSearch,
     },
     mounted() {
-        axios.get('http://localhost:8088/comment/music?id=186016&limit=1').then(res=>{
-            console.log(res.data)
-        })
-    },
+        if(platform=='win32'){
+            $('.page-index').css({
+                border:'1px solid #ddd'
+            })
+        }
+    }
 }
 </script>
 <style lang="scss">
     .page-index{
-        background:$color_main;
+        box-sizing:border-box;
     }
 </style>
 

@@ -8,7 +8,9 @@ module.exports = {
                 '@module':path.resolve('./src/components/moduleComponents'),
                 '@page':path.resolve('./src/components/pages'),
                 '@main':path.resolve('./mainprocess'),
-                '@asstets':path.resolve('./src/asstets')
+                '@asstets':path.resolve('./src/asstets'),
+                '@api':path.resolve('./src/api'),
+                '@utils':path.resolve('./src/utils')
             }
         }
     },

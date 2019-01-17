@@ -22,8 +22,8 @@ class CreateWin{
         const { width } = require('electron').screen.getPrimaryDisplay().workAreaSize
         switch(winname){
             case 'indexwindow':
-                this.winwidth = parseInt(width*0.5)
-                this.winheight = parseInt(width*0.3)
+                this.winwidth = parseInt(width*0.5)>980 ? parseInt(width*0.5) : 980
+                this.winheight = parseInt(width*0.3)>660 ? parseInt(width*0.3) : 660
                 break
             default:
                 this.winheight = 200
